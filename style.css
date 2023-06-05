@@ -1,0 +1,96 @@
+:root {
+    /* font-family */
+    --ffh-main: monospace;
+    --ffp: sans-serif;
+
+    /* Fonts */
+    font-size: 62.5%;
+    --fsh-1-principal: 2.5rem;
+    --fsh-1-section: 1.8rem;
+    --fsp: 1.2rem;
+
+    /* Colors */
+    --color-1: #3c1642;
+    --color-2: #086375;
+    --color-3: #1dd3b0;
+    --color-4: #affc41;
+    --color-5: #b2ff9e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 700px;
+    margin: auto;
+}
+
+header.header {
+    padding: 2rem 1rem;
+    min-height: 10rem;
+
+    background-color: var(--color-5);
+    color: var(--color-1);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    font-family: var(--ffh-main);
+    font-size: var(--fsh-1-principal);
+}
+
+.header .menu {
+    min-width: 5rem;
+    height: 2rem;
+
+    border: 1px solid var(--color-2);
+    border-radius: 1rem;
+    
+    color: var(--color-2);
+    font-family: var(--ffp);
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 2rem;
+
+    position: relative;
+}
+
+.nav-menu {
+    background-color: #3c1642;
+    color: #b2ff9e;
+
+    display: none;
+
+    position: absolute;
+    top: 2rem;
+    right: 0;
+
+    width: fit-content;
+    padding: 0.5rem 1rem;
+}
+
+.nav-menu a {
+    color: inherit;
+}
+
+main {
+    
+}
+
+section {
+
+}
+
+aside {
+
+}
+
+footer {
+
+}

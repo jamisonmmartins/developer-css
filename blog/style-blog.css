@@ -1,0 +1,208 @@
+:root {
+    /* font-family */
+    --ffh-main: monospace;
+    --ffp: sans-serif;
+
+    /* Fonts */
+    font-size: 62.5%;
+    --fsh-1-principal: 2.5rem;
+    --fsh-1-section: 1.8rem;
+    --fsp: 1.2rem;
+
+    /* Colors */
+    --color-1: #3c1642;
+    --color-2: #086375;
+    --color-3: #1dd3b0;
+    --color-4: #affc41;
+    --color-5: #b2ff9e;
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--color-1);
+    font-size: var(--fsp);
+    font-family: var(--ffp);
+    line-height: 1.8rem;
+    text-align: justify;
+}
+
+.nav-land {
+    margin: 1rem 1rem 2rem 1rem ;
+}
+
+ol {
+    margin-left: 3rem;
+}
+
+ol li {
+    font-size: var(--fsp);
+    line-height: 2.5rem;
+}
+
+.nav-land ol a {
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--color-2);
+}
+
+.header {
+    display: grid;
+    justify-content: center;
+
+    min-height: 15rem;
+
+    margin: 0 0 2rem;
+
+    background-color: var(--color-5);
+
+    background-attachment: fixed;
+}
+
+h1.principal {
+    font-weight: 900;
+    font-size: var(--fsh-1-principal);
+    text-align: center;
+    max-width: max-content;
+
+    margin: auto;
+
+    padding: 1rem 0 0.5rem;
+
+    text-shadow: 0.5px 1px 3px var(--color-2);
+}
+
+section {
+    margin: 3rem 2rem;
+}
+
+section a {
+    color: var(--color-2);
+    text-decoration: none;
+    font-style: italic;
+}
+
+h1.principal, h1.section {
+    font-family: var(--ffh-main);
+    color: var(--color-1);
+}
+
+h1.section {
+    font-weight: 600;
+    font-size: var(--fsh-1-section);
+    color: var(--color-2);
+    margin: 1rem auto 1rem;
+}
+
+section h2, section h3 {
+    font-family: var(--ffh-main);
+    font-size: var(--fsh-1-section);
+    font-weight: 400;
+    color: var(--color-2);
+    margin: 2rem auto auto;
+}
+
+section p {
+    margin: 1rem auto;
+}
+
+code {
+    display: block;
+
+    padding: 1rem 1rem 1.5rem 1.5rem;
+
+    border-radius: 1rem;
+
+    margin: 1rem auto 1rem;
+
+    max-width: 300px;
+    height: max-content;
+    
+    background-color: var(--color-1);
+    
+    color: var(--color-5);
+    font-family: var(--ffh-main);
+    font-weight: 600;
+    text-align: left;
+
+    letter-spacing: 1px;
+}
+
+div.code_exemplo {
+    max-width: 300px;
+    min-height: 15rem;
+    max-height: fit-content;
+
+    margin: 1rem auto;
+
+    border-radius:10px;
+}
+
+.bg-color {
+    background: #affc41;
+}
+
+.bg-image {
+    background: url(css/background/img/olya.jpg);
+}
+
+.bg-gradient {
+    background: linear-gradient(180deg, #b2ff9e, #affc41, #1dd3b0);
+}
+
+div.code_exemplo h1 {
+    padding: 1rem 0;
+
+    border-radius: 8px 8px 0 0;
+
+    font-size: small;
+    font-weight: 600;
+    
+    text-align: center;
+
+    color: var(--color-5);
+}
+
+@media (min-width:500px) {
+    :root{
+        --fsh-1-principal: 4rem;
+        --fsh-1-section: 2.5rem;
+        --fsp: 1.6rem;
+    }
+
+    body {
+        max-width: 700px;
+        margin: auto;
+    }
+    
+    p {
+        line-height: 2.5rem;
+    }
+
+    .header {
+        height: 20rem;
+    }
+
+    code, div.code_exemplo  {
+        max-width: 400px;
+    }
+    section {
+        margin: 4rem auto;
+    }
+
+    section h3 {
+        padding-top: 1rem;
+    }
+
+}
+
+
+
+
+
+
